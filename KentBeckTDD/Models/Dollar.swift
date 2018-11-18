@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Dollar {
+struct Dollar: Equatable {
     
     var amount: Int
     
