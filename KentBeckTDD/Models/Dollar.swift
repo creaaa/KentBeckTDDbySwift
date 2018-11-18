@@ -10,13 +10,15 @@ import Foundation
 
 struct Dollar: Equatable {
     
-    var amount: Int
+    private var amount: Int
+    
+    // 4章で追加(規定initだとなぜかprivate な amountにアクセスできない)
+    init(amount: Int) {
+        self.amount = amount
+    }
     
     // 引数 multipier で、自身の amount を掛けたときの値
     func times(_ multipier: Int) -> Dollar {
-        // 1
-        // self.amount = self.amount * multipier
-        // 2
         return Dollar(amount: self.amount * multipier)
     }
 }

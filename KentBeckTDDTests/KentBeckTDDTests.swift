@@ -11,16 +11,11 @@ import XCTest
 
 class MoneyTest: XCTestCase {
 
-    // 1
+    // 4
     func testMultiplication() {
-        // times メソッドが副作用バリバリなので var になった
-        // ...が、ここ、2章で let にできるようになった(副作用が消えたため)
-        let five    = Dollar(amount: 5)
-        var product = five.times(2)
-        XCTAssertEqual(product.amount, 10)
-        // 2
-        product = five.times(3)
-        XCTAssertEqual(product.amount, 15)
+        let five = Dollar(amount: 5)
+        XCTAssertEqual(five.times(2), Dollar(amount: 10))
+        XCTAssertEqual(five.times(3), Dollar(amount: 15))
     }
     
     // 3
