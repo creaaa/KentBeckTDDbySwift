@@ -13,7 +13,10 @@ struct Dollar {
     var amount: Int
     
     // 引数 multipier で、自身の amount を掛けたときの値
-    mutating func times(_ multipier: Int) {
-        self.amount = self.amount * multipier
+    func times(_ multipier: Int) -> Dollar {
+        // 1
+        // self.amount = self.amount * multipier
+        // 2
+        return Dollar(amount: self.amount * multipier)
     }
 }
