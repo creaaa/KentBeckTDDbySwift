@@ -13,6 +13,7 @@
 		3007759F21A1345A00F6B466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3007759E21A1345A00F6B466 /* Assets.xcassets */; };
 		300775A221A1345A00F6B466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300775A021A1345A00F6B466 /* LaunchScreen.storyboard */; };
 		300775AD21A1345B00F6B466 /* KentBeckTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300775AC21A1345B00F6B466 /* KentBeckTDDTests.swift */; };
+		300775B921A13A9700F6B466 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300775B821A13A9700F6B466 /* Dollar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		300775A821A1345B00F6B466 /* KentBeckTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KentBeckTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		300775AC21A1345B00F6B466 /* KentBeckTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KentBeckTDDTests.swift; sourceTree = "<group>"; };
 		300775AE21A1345B00F6B466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300775B821A13A9700F6B466 /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		3007759621A1345A00F6B466 /* KentBeckTDD */ = {
 			isa = PBXGroup;
 			children = (
+				300775B721A13A8D00F6B466 /* Models */,
 				3007759721A1345A00F6B466 /* AppDelegate.swift */,
 				3007759921A1345A00F6B466 /* ViewController.swift */,
 				3007759B21A1345A00F6B466 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				300775AE21A1345B00F6B466 /* Info.plist */,
 			);
 			path = KentBeckTDDTests;
+			sourceTree = "<group>";
+		};
+		300775B721A13A8D00F6B466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				300775B821A13A9700F6B466 /* Dollar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3007759A21A1345A00F6B466 /* ViewController.swift in Sources */,
+				300775B921A13A9700F6B466 /* Dollar.swift in Sources */,
 				3007759821A1345A00F6B466 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
